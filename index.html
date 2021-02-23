@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello，宝琴</title>
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style type="text/css">
+    .pipeline {
+      display: flex;
+    }
+    .pipelineItem {
+      width: 230px;
+    }
+    .job-box {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .job-box:not(:first-child) {
+      margin-top: 30px;
+    }
+    .horizontal-line {
+      display: inline-block;
+      position: absolute;
+      width: 25px;
+      border-top: 1px solid #eeeeee;
+    }
+    .horizontal-line-left, .arc-box-left {
+      left: 0;
+    }
+    .horizontal-line-right, .arc-box-right  {
+      right: 0;
+    }
+    .curve {
+      border-radius: 0 12px 0 0;
+      border-right: solid #eeeeee 1px;
+      border-top: solid #eeeeee 1px;
+      height: 12px;
+      width: 12px;
+    }
+    .arc-box {
+      position: absolute;
+    }
+    .arc-box-double-curve {
+      top: -46px;
+    }
+    .arc-box-single-curve {
+      top: -70px;
+    }
+    .arc-box-right {
+      transform: rotateY(180deg);
+    }
+    .single-curve-middle {
+      height: 70px;
+      border-right: solid #eeeeee 1px;
+    }
+    .double-curve-middle {
+      height: 35px;
+      border-right: solid #eeeeee 1px;
+    }
+    .curve-bottom {
+      transform: rotate(180deg);
+      position: relative;
+      right: -12px;
+    }
+    .job {
+      width: 170px;
+      border: 1px solid #eeeeee;
+      border-radius: 50px;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      color: #666666;
+      font-size: 12px;
+    }
+    .icon {
+      padding: 0 15px 0 5px;
+    }
+    .name {
+      width: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="dist/bundle.js"></script>
+  <script type="text/babel" src="pipeline.jsx"></script>
+</body>
+</html>

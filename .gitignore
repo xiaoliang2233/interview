@@ -1,0 +1,10 @@
+node_modules/
+.idea/.gitignore
+.idea/codeStyles/
+.idea/inspectionProfiles/
+.idea/jsLibraryMappings.xml
+.idea/jsLinters/
+.idea/misc.xml
+.idea/modules.xml
+.idea/thriftCompiler.xml
+.idea/view.iml
